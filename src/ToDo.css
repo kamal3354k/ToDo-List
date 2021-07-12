@@ -1,0 +1,197 @@
+
+.list-box::-webkit-scrollbar {
+    width: 5px;
+position: absolute;
+top: 0;
+  }
+
+  .list-box::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px; */
+    background-color: transparent;
+
+  }
+
+  .list-box::-webkit-scrollbar-thumb {
+    background: #ff005c; 
+    /* border-radius: 10px; */
+    width: 2px;
+    /* height: 20px; */
+    /* position: absolute; */
+  }
+   
+
+.todo-box {
+    margin: 100px auto;
+    display: flex;
+   overflow: hidden;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+    width: 275px;
+    /* background: url(httpgba(255,s://dl.dropbox.com/s/mpmu0gjtxv2x3fs/Webp.net-resizeimage%20%281%29.jpg?raw=1); */
+    /* background:#03072a; */
+   
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    height: 380px;
+    animation: animated-border 1.5s infinite;
+    border-top-color: #fb0960;
+    border-right-color: #006af8;
+    border-bottom-color: #fb0960;
+    border-left-color: #006af8;
+
+
+
+
+
+    /* new look */
+
+    backdrop-filter: blur(32px) saturate(182%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.23);
+    border-radius: 12px;
+    /* filter: blur(1px); */
+    border: 1px solid rgba(255, 255, 255, 0.123);
+}
+@keyframes animated-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+        border-top-color: #fb0960;
+        border-right-color: #006af8;
+        border-bottom-color: #fb0960;
+        border-left-color: #006af8;
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+        border-top-color: #006af8;
+        border-right-color: #fb0960;
+        border-bottom-color: #006af8;
+        border-left-color: #fb0960;
+    }
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+}
+
+h2.title {
+    text-align: center;
+    font-size: 30px;
+    color: transparent;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px 8px rgb(0 0 0 / 50%);
+    /* -webkit-text-stroke: 1px white; */
+    font-weight: 900;
+    filter: blur(.2px);
+    font-family: monospace;
+    color: #0171f9;
+    /* background: linear-gradient(110deg, #ff005c, #190aff82); */
+    padding: 7px;
+
+
+    /* new look */
+    color: #ffffffb5;
+}
+
+ul.list {
+    list-style: none;
+    padding: 0px;
+    padding-left: 8%;
+}
+
+body {
+    background: url(https://dl.dropbox.com/s/mpmu0gjtxv2x3fs/Webp.net-resizeimage%20%281%29.jpg?raw=1);
+    /* background: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+ul.list>li>button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(242 29 111);
+    cursor: pointer;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+    /* -webkit-text-stroke: 1px white; */
+}
+
+input#input {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #fb0960;
+    outline: none;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 20px;
+    height: auto;
+    overflow-x: scroll;
+    text-align: center;
+    width: 200px;
+    animation: border 1.5s linear infinite;
+}
+
+@keyframes border {
+    0% {
+        border-bottom: 2px solid #fb0960;
+    }
+
+    100% {
+        border-bottom: 2px solid #006af8;
+    }
+}
+
+input#input+button {
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 50%);
+    color: #006ff7;
+    border: none;
+    background: none;
+    margin: 0px;
+    font-size: 25px;
+    padding: 0;
+    padding-top: 11px;
+    font-weight: 500;
+    /* -webkit-text-stroke: 1px white; */
+    cursor: pointer;
+}
+
+ul.list>li>p {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 50%);
+
+}
+
+::placeholder {
+    color: #ffffff94;
+}
+
+body:before {
+    /* width: 100%;
+    height: 100vh; */
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    /* box-shadow: inset 0 0 0 px rgba(255,255,255,0.2); */
+    filter: blur(2px);
+}
+
+.list-box {
+    overflow-y: scroll;
+}
